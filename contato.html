@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Contato</title>
+       <link rel="stylesheet" href="./style.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    </head> 
+    <body>
+         <header>
+            <a href="/padaria_index.html" class="link-icon">
+                <i class="fa-solid fa-house"></i>
+            </a>
+         </header>
+        <div class="container">
+            <img src="logo-padaria.png" alt="Logo da Padaria" class="logo"> 
+            <h1>Contato</h1>  
+            <form action="enviar_email.php" method="POST">
+
+                <div class="form-group">
+                    <label for="nome">Nome</label> <!-- Label para o campo de nome -->
+                    <input type="text" id="nome" name="nome" required> <!-- Campo de texto para o nome, obrigando o preenchimento -->
+                </div> 
+               
+                          
+               <div class="form-group">
+                    <label for="telefone">Telefone</label> <!-- Label para o campo de telefone -->
+                    <input type="tel" id="telefone" name="telefone" required> <!-- Campo de telefone, obrigando o preenchimento -->
+                </div>
+            
+               <div class="form-group">
+                     <label for="email">E-mail</label> <!-- Label para o campo de e-mail -->
+                     <input type="email" id="email" name="email" required> <!-- Campo de e-mail, obrigando o preenchimento -->
+                </div>
+   
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label> <!-- Label para o campo de mensagem -->
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea> <!-- Campo de texto maior para a mensagem, obrigando o preenchimento -->
+                </div>
+   
+                <div class="buttons"> <!-- Div que contém os botões -->
+                    <button type="submit" class="btn">Enviar</button> <!-- Botão para enviar o formulário -->
+                </div>
+   
+                <footer>
+                    <p>&copy; 2025 Padaria do João - Todos os direitos reservados</p>
+                </footer>
+               
+   
+    </body>   
+  </head>
+</html>

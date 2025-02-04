@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('planodefundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    color: #555;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+}
+
+.menu {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.link-icon {
+    font-size: 20px;
+    color: black;
+}
+
+.link-icon i:hover {
+    color: #e68a00;
+}
+
+.produto img {
+    margin-right: 220px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10%;
+}
+
+/* Responsividade */
+
+/* Small devices (phones, 600px and up) */
+@media only screen and (max-width: 599px) {
+    .container {
+        width: 95%; /* Torna a largura do conteúdo mais estreita em dispositivos pequenos */
+        padding: 15px; /* Ajusta o padding para dispositivos pequenos */
+    }
+
+    .logo {
+        width: 120px; /* Diminui o tamanho do logo em dispositivos pequenos */
+    }
+
+    .form-group {
+        margin-bottom: 20px; /* Diminui o espaçamento entre os campos em dispositivos pequenos */
+    }
+
+    .btn {
+        width: 100%; /* Faz os botões ocuparem toda a largura em telas pequenas */
+        margin: 10px 0; /* Ajusta o espaçamento dos botões */
+    }
+
+    footer {
+        padding: 15px; /* Ajusta o padding do rodapé para dispositivos pequenos */
+    }
+
+    h2 {
+        margin-top: 5%; /* Ajusta o espaçamento no título */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .container {
+        width: 90%; /* Torna a largura do conteúdo um pouco mais estreita em tablets */
+    }
+
+    .logo {
+        width: 130px; /* Ajusta o tamanho do logo para tablets */
+    }
+
+    .btn {
+        width: auto; /* Botões com largura automática em tablets */
+    }
+
+    footer {
+        padding: 20px; /* Ajusta o padding do rodapé */
+    }
+
+    h2 {
+        margin-top: 7%; /* Ajusta o espaçamento do título */
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 80%; /* Mantém a largura do conteúdo em 80% */
+    }
+
+    .logo {
+        width: 150px; /* Mantém o tamanho do logo para desktops */
+    }
+
+    footer {
+        padding: 20px; /* Manter o padding do rodapé */
+    }
+
+    h2 {
+        margin-top: 10%; /* Mantém o espaçamento do título */
+    }
+}
