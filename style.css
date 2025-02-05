@@ -1,107 +1,124 @@
+/* Define o estilo geral do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif; /* Define a fonte do corpo da página como Arial, com uma alternativa sans-serif */
+    margin: 0; /* Remove a margem padrão do corpo da página */
+    padding: 0; /* Remove o padding padrão do corpo da página */
+    background-color: #f4f4f9; /* Define a cor de fundo do corpo da página como um tom de cinza claro */
 }
 
+/* Define o estilo para a classe .container, que é usada para o conteúdo principal */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url('planodefundo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 80%; /* Define a largura do container como 80% da largura da tela */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 20px; /* Adiciona 20px de espaçamento interno em todos os lados */
+    background-color: white; /* Define a cor de fundo do container como branco */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do container */
+    background-image: url('planodefundo.png'); /* Define uma imagem de fundo chamada 'planodefundo.png' */
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço do container */
+    background-position: center; /* Posiciona a imagem de fundo no centro */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
 }
 
+/* Define o estilo para o título principal (h1) */
 h1 {
-    text-align: center;
-    color: #333;
+    text-align: center; /* Alinha o texto no centro */
+    color: #333; /* Define a cor do texto como um tom escuro de cinza */
 }
 
+/* Define o estilo para os grupos de formulários */
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Adiciona um espaçamento de 30px abaixo de cada grupo de formulário */
 }
 
+/* Define o estilo para os rótulos (labels) dos campos de formulário */
 .form-group label {
-    display: block;
-    color: #555;
+    display: block; /* Faz com que o rótulo ocupe toda a largura disponível */
+    color: #555; /* Define a cor do texto do rótulo como cinza escuro */
 }
 
+/* Define o estilo para os campos de entrada (input) e as áreas de texto (textarea) */
 .form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 100%; /* Define a largura dos campos como 100% do seu elemento pai */
+    padding: 10px; /* Adiciona 10px de padding dentro dos campos */
+    margin-top: 5px; /* Adiciona 5px de margem acima dos campos */
+    border: 1px solid #ddd; /* Define uma borda fina e cinza ao redor dos campos */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos campos */
 }
 
+/* Define o estilo para as áreas de texto (textarea) */
 .form-group textarea {
-    resize: vertical;
+    resize: vertical; /* Permite que a área de texto seja redimensionada apenas na vertical */
 }
 
+/* Define o estilo para o grupo de botões */
 .buttons {
-    text-align: center;
+    text-align: center; /* Alinha os botões no centro */
 }
 
+/* Define o estilo para os botões (btn) */
 .btn {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 5px;
+    background-color: black; /* Define o fundo do botão como preto */
+    color: white; /* Define a cor do texto do botão como branco */
+    padding: 10px 20px; /* Adiciona 10px de padding no topo e embaixo, e 20px nas laterais */
+    border: none; /* Remove qualquer borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+    text-decoration: none; /* Remove qualquer decoração de texto (como sublinhado) */
+    margin: 5px; /* Adiciona 5px de margem ao redor dos botões */
 }
 
+/* Define o estilo para o botão ao passar o mouse sobre ele */
 .btn:hover {
-    background-color: #e68a00;
+    background-color: #e68a00; /* Altera a cor de fundo do botão para laranja ao passar o mouse */
 }
 
+/* Define o estilo para o logo */
 .logo {
-    display: block;
-    margin: 0 auto 20px;
-    width: 150px;
+    display: block; /* Faz com que o logo seja exibido como bloco */
+    margin: 0 auto 20px; /* Centraliza o logo e adiciona 20px de margem abaixo dele */
+    width: 150px; /* Define a largura do logo como 150px */
 }
 
+/* Define o estilo para o menu */
 .menu {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    padding: 20px; /* Adiciona 20px de espaçamento interno ao menu */
+    display: flex; /* Exibe os itens do menu em linha (horizontalmente) */
+    justify-content: center; /* Centraliza os itens do menu */
 }
 
+/* Define o estilo para os ícones de links */
 .link-icon {
-    font-size: 20px;
-    color: black;
+    font-size: 20px; /* Define o tamanho da fonte dos ícones como 20px */
+    color: black; /* Define a cor dos ícones como preta */
 }
 
+/* Define o estilo para os ícones de links ao passar o mouse sobre eles */
 .link-icon i:hover {
-    color: #e68a00;
+    color: #e68a00; /* Altera a cor do ícone para laranja ao passar o mouse */
 }
 
+/* Define o estilo para as imagens dos produtos */
 .produto img {
-    margin-right: 220px;
+    margin-right: 220px; /* Adiciona 220px de margem à direita das imagens dos produtos */
 }
 
+/* Define o estilo para o rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px;
+    background-color: #333; /* Define o fundo do rodapé como cinza escuro */
+    color: #fff; /* Define a cor do texto do rodapé como branca */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 20px; /* Adiciona 20px de espaçamento interno ao rodapé */
+    position: relative; /* Define a posição como relativa para ajustar a posição */
+    bottom: 0; /* Coloca o rodapé na parte inferior da página */
+    width: 100%; /* Define a largura do rodapé como 100% da tela */
+    margin-top: 20px; /* Adiciona 20px de margem acima do rodapé */
 }
 
+/* Define o estilo para o título secundário (h2) */
 h2 {
-    text-align: center;
-    margin-top: 10%;
+    text-align: center; /* Alinha o texto no centro */
+    margin-top: 10%; /* Adiciona 10% de margem superior ao título */
 }
 
 /* Responsividade */
