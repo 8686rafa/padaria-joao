@@ -18,6 +18,7 @@ body {
     background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço do container */
     background-position: center; /* Posiciona a imagem de fundo no centro */
     background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    overflow: hidden; /* Garante que nada saia das bordas do container */
 }
 
 /* Define o estilo para o título principal (h1) */
@@ -39,7 +40,7 @@ h1 {
 
 /* Define o estilo para os campos de entrada (input) e as áreas de texto (textarea) */
 .form-group input, .form-group textarea {
-    width: 100%; /* Define a largura dos campos como 100% do seu elemento pai */
+    width: 95%; /* Define a largura dos campos como 100% do seu elemento pai */
     padding: 10px; /* Adiciona 10px de padding dentro dos campos */
     margin-top: 5px; /* Adiciona 5px de margem acima dos campos */
     border: 1px solid #ddd; /* Define uma borda fina e cinza ao redor dos campos */
@@ -99,9 +100,18 @@ h1 {
 }
 
 /* Define o estilo para as imagens dos produtos */
-.produto img {
-    margin-right: 220px; /* Adiciona 220px de margem à direita das imagens dos produtos */
+.produto {
+    display: flex; /* Alinha as imagens horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
 }
+
+.produto img {
+    max-width: 100%; /* Faz com que as imagens não ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 0; /* Remove a margem à direita para evitar excessos */
+    border-radius: 8px; /* Aplica borda arredondada nas imagens */
+}
+
 
 /* Define o estilo para o rodapé */
 footer {
@@ -111,8 +121,8 @@ footer {
     padding: 20px; /* Adiciona 20px de espaçamento interno ao rodapé */
     position: relative; /* Define a posição como relativa para ajustar a posição */
     bottom: 0; /* Coloca o rodapé na parte inferior da página */
-    width: 100%; /* Define a largura do rodapé como 100% da tela */
-    margin-top: 20px; /* Adiciona 20px de margem acima do rodapé */
+    width: 95%; /* Define a largura do rodapé como 100% da tela */
+    margin-top: 10px; /* Adiciona 20px de margem acima do rodapé */
 }
 
 /* Define o estilo para o título secundário (h2) */
@@ -191,5 +201,16 @@ h2 {
 
     h2 {
         margin-top: 10%; /* Mantém o espaçamento do título */
+    }
+}
+/* Adiciona responsividade com media queries */
+@media screen and (max-width: 768px) {
+    .produto {
+        flex-direction: column; /* Empilha as imagens verticalmente em telas menores */
+        align-items: center; /* Centraliza as imagens */
+    }
+    .produto img {
+        margin-right: 0; /* Remove a margem à direita nas telas menores */
+        margin-bottom: 20px; /* Adiciona espaçamento entre as imagens */
     }
 }
